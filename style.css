@@ -1,0 +1,156 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+.navbar{
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 18px;
+}
+.bg-img::before{
+    content: "";
+    background: url('./camera-bg.jpg') no-repeat center center/cover;
+    z-index: -1;
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    opacity: 0.9;
+}
+.vat{
+   color: white;
+   font-size: 35px;
+   display: flex;
+   justify-content: center;
+   /* align-items: center; */
+   margin-top: 98px;
+   margin-bottom: 141px;
+   font-family: 'Cinzel', serif;
+}
+.vat p{
+    color: red;
+}
+.black-body{
+    height: 100%;
+    /* background-color: rgb(15, 15, 15); */
+    background: url('./slider-bg.png') no-repeat center center/cover;
+}
+.container-main{
+    height: 500px;
+    width: 500px;
+    margin: auto;
+}
+.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(15, 15, 15);
+}
+.container-moody{
+    height: 337px;
+    width: 300px;
+    margin: 7px;
+    /* border: 2px solid black; */
+    color: white;
+    background-color: rgb(34, 33, 33);
+}
+.container-moody h4::first-letter{
+    color: red;
+}
+.about{
+    color: white;
+    background-color: rgb(15, 15, 15);
+    text-align: center;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+.about h3{
+    padding-top: 20px;
+}
+.about p{
+    padding: 20px 100px;
+}
+.about img{
+    height: 170px;
+    width: 170px;
+    margin-top: 20px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+.social{
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+.social a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.social .mx-2{
+    font-size: 28px;
+}
+.social b{
+    font-size: 15px;
+}
+.back a{
+    font-weight: normal;
+}
+.whatsapp{
+    position: fixed;
+    bottom: 10px;
+    right: 24px;
+    font-size: 50px;
+}
+.whatsapp a{
+    text-decoration: none;
+    color: green;
+}
+.carousel-item{
+    overflow: hidden;
+}
+.carousel-item img{
+    transition: all 1.5s ease;
+}
+.carousel-item:hover img{
+    transform: scale(1.2);
+}
+@media only screen and (max-width:960px){
+    .black-body{
+    background: url('./slider-bg1.png') no-repeat center center/cover;
+}
+}
+@media only screen and (max-width:504px){
+    .container-main{
+        height: 350px;
+        width: 350px;
+    }
+    .container-moody{
+        height: 334px;
+    }
+}
+@media only screen and (max-width:800px){
+    .about p{
+        padding: 20px 15px;
+    }
+}
+@media only screen and (max-width:350px){
+    .container-main{
+        height: 300px;
+        width: 300px;
+    }
+    .vat{
+        font-size: 32px;
+    }
+} 
+@media only screen and (max-width:300px){
+    .container-main{
+        height: 250px;
+        width: 250px;
+    }
+    .container-moody{
+        height: 290px;
+    }
+    .vat{
+        font-size: 26px;
+    }
+}
